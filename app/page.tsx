@@ -14,7 +14,7 @@ export default function Home() {
     
     const interval = setInterval(() => {
       const now = new Date()
-      const difference = target - now
+      const difference = target.getTime() - now.getTime()
       
       if (difference > 0) {
         setTimeLeft({
